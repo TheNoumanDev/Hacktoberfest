@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AutomotiQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://kit.fontawesome.com/e64e6f73db.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="Images/image1.jpg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+
+.container {
+  padding: 16px;
+  width: 90%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 81px;
+  height: 625px;
+  background-image: url("https://images.wallpaperscraft.com/image/jeep_suv_car_180181_1920x1200.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+  font-family: monospace; border-bottom: 2px solid rgb(233, 64, 64); width: 230px;
+}
+.header p{
+  background-color: #888;width: 33%; padding: 15px; margin-top: 20px;border-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+  .header{
+    margin-top: 10px;
+    color: aliceblue;
+    font-family: monospace;
+    
+    padding: 17px;
+    height: 100%;
+    width: 93%;
+    display: inline-block;
+    background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: left;
+  
+
+  }
+}
+
+/*button */
+
+    
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+    
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    .login{
+      font-weight:bold ;
+      width: 200px;
+      color: aliceblue;
+      
+      border-radius: 5px;
+    }
+    .login:hover{
+      background-color: darkgreen;
+
+    }
+/* Sign Up Forms Styles*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container1 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text],input[type=password] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container1 {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+.City{
+    
+      color: black;
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 12px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      
+        width: 100%;
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+#cancelbtn{
+    background-color: #f44336;
+}
+#cancelbtn:hover{
+    background-color: #cc4b42;
+}
+
+    
+
+    /* The Modal (background) */
+    .modal0 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 98%; /* Full width */
+        height: 100%; /* Full height */
+        padding-right: 20px;
+        background-color: #474e5d;
+        padding-top: 50px;
+        padding-left: 20px;
+        overflow: auto;
+
+    }
+
+ 
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+    
+  
+    
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+            width: 100%;
+        }
+    }
+    @media (max-width: 800px) {
+  .row {
+    flex-direction:column;
+  }
+  
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="bg-text">
+  <h1>AutomotiQ</h1>
+  <p>Here we provide a large platform to Buy,Sell Vehicles <br><br> And Also Provide Rental Services..</p>
+  
+  <button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button class="login"   onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+</div>
+
+</div>
+<div id="id01" class="modal"> 
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--Sign up Form -->
+<div id="id02" class="modal0">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="row">
+    <div class="col-75">
+      <div class="container1">
+        <form  action="/action_page.php">
+        
+          <div class="row">
+            <div class="col-50">
+              <h3>Personal Detail</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Sharjeel" required>
+              <label for="cname"><i class="fa fa-id-card-o" ></i> CNIC</label>
+                  <input type="text" id="cnic" name="CNIC" placeholder="XXXXX-1234567-X"> required
+              
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="W. 15th Street" required>
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              
+              <select name="cities" id="city" class="City" required>
+                  <option value="" selected disabled>-Select-</option>
+                  <option value="1">Gujranwala</option>
+                  <option value="2">Lahore</option>
+                  <option value="3">Islamabad</option>
+                  <option value="4">Karachi</option>
+                  <option value="5">Sarghodha</option>
+                </select>
+  
+              
+            </div>
+            <div class="col-50">
+              <h3>Further Details</h3>
+              
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="isharjeel@gmail.com" required>
+              <label for="password"><i class='fas fa-key' style='font-size:17px'></i> Password</label>
+              <input type="password" id="pass" name="Password" placeholder="digits and alphabets,1 special character (Must)" required>
+              <label for="repeat"> <i class='fas fa-mask' style='font-size:17px'></i> Repeat Password</label>
+              <input type="password" id="repeatPass" name="Repeat" placeholder="Must be same as above" required>
+              <label for="Contact"><i class="fa fa-phone"></i> Contact No</label>
+              <input type="text" id="conatctNo" name="No" placeholder="03123456789" required>
+            </div>
+  
+            
+            
+          </div>
+          
+          
+          <input type="button" value="SignUp" class="btn" style="float: left;" onclick="saveusers()">
+          <input type="button" value="Cancel" class="btn" id="cancelbtn" onclick="document.getElementById('id02').style.display='none'" >
+        
+     
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+//saveuerfunction
+
+function saveusers()
+{
+  var password=$("$pass").val();
+  var repeatpassword=$("$repeatPass").val();
+
+  if(password===repeatpassword)
+  {
+  var name=$("$fname").val();
+  var cnic=$("$cnic").val();
+  var address=$("$adr").val();
+  var city=$("$city").val();
+  var email=$("$email").val();
+  password=$("$pass").val();
+  var contactNumber=$("$conatctNo").val();
+  var obj
+  {
+    Name;name,
+    CNIC;cnic,
+    Address;address,
+    City;city,
+    Email;email,
+    Passwor;password,
+    ContactNo;contactNumber;
+  }
+  console.log(obj);
+  }
+  else
+  {
+  alert("Password Missmatch");
+  }
+
+  
+}
+
+
+
+// Get the modal
+var modal = document.getElementById('id01');
+var model1=document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
