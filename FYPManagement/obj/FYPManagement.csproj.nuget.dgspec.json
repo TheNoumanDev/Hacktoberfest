@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\semester 4\\DBS MidTerm Project\\db2020-cs-24\\FYPManagement\\FYPManagement.csproj": {}
+  },
+  "projects": {
+    "E:\\semester 4\\DBS MidTerm Project\\db2020-cs-24\\FYPManagement\\FYPManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\semester 4\\DBS MidTerm Project\\db2020-cs-24\\FYPManagement\\FYPManagement.csproj",
+        "projectName": "FYPManagement",
+        "projectPath": "E:\\semester 4\\DBS MidTerm Project\\db2020-cs-24\\FYPManagement\\FYPManagement.csproj",
+        "packagesPath": "C:\\Users\\Umair manzoor\\.nuget\\packages\\",
+        "outputPath": "E:\\semester 4\\DBS MidTerm Project\\db2020-cs-24\\FYPManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Umair manzoor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
