@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+}
+#marks
+{
+    font-family: 'Baloo Tammudu 2', cursive;
+    position:absolute;
+    bottom:50px;
+    right: 180px;
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue; 
+}
+#sn
+{
+    font-family: 'Baloo Tammudu 2', cursive;
+    position:absolute;
+    top:50px;
+    left: 170px;
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue; 
+}
+.backside
+{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100vw 100vh;
+    background: url(bg1.png);
+    
+    
+}
+#board
+{
+    background-image: url(bg.jpg);
+    height:85vmin;
+    width: 85vmin;
+    border:3px solid white;
+    display: grid;
+    border-radius: 5%;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+  
+}
+.food
+{
+    background: lightpink;
+    border: .25vmin solid white;
+    border-radius: 10%;
+    transform: scale(0.7);
+}
+.head
+{
+    background:lightsalmon;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.snake
+{
+    background-color: greenyellow;
+    border: .25vmin solid white;
+    border-radius: 30%;
+}
