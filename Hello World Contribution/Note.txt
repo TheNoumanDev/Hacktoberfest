@@ -1,7 +1,0 @@
-#Copy Following Comments and Add to the Top of your Programs.
-
-Name: Here goes your name
-
-Username: Here goes your GitHub username
-
-Favorite Language: Here goes your fav programming language
