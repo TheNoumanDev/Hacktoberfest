@@ -1,10 +1,10 @@
 <p align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
-        <img src="https://raw.githubusercontent.com/keshavsingh4522/hacktoberfest2021/35fc6060c5ddead5792f29a2437fea160dbe9804/Assets/logo-hacktoberfest-full.f42e3b1.svg" width="30%">
+        <img src="https://uno-website-assets.s3.amazonaws.com/wp-content/uploads/2022/09/28094927/Uno_HackFest22_Hero_V1-1024x395.jpg" width="90%">
     </a>
 </p>
 
-<h1 align="center"> Hacktoberfest 2021 🎉</h1>
+<h1 align="center"> Hacktoberfest 2022 🎉</h1>
 
 # Note
 ```py
@@ -12,7 +12,7 @@
 Always try to make more then 4 pull requests.
 Let's assume you have made only 4 pull request to different projects.
 but one project is excluded from hackoctoberfest event.
-Then your pull request will not be counted and you will just have 3 valid pull requests.
+Then your pull request will not be counted and you will just have 4 valid pull requests.
 If this happens then you will not get any swags or t-shirt.
 '''
 ```
