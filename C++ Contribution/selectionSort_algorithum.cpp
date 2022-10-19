@@ -4,10 +4,10 @@
 using namespace std;
 int main()
 {
-    const int size = 10;
-    int x = time(0);
-    srand(x);
-    int arr[size] = {};
+    int size = 0;
+    cin>>size;
+    int temp=0;
+    int *arr=new int[size];
     int min_index;
     for (int i = 0; i < size; i++)
     {
@@ -19,19 +19,17 @@ int main()
     }
     for (int i = 0; i < size - 1; i++)
     {
-        min_index = i;
+        
         for (int j = i + 1; j < size; j++)
         {
-            if (arr[j] < arr[min_index])
+            if (arr[i] < arr[j])
             {
-                min_index = j;
+               temp = arr[i];
+               arr[i] = arr[j];
+               arr[j] = temp;
             }
         }
-        int temp;
-        temp = arr[i];
-        arr[i] = arr[min_index];
-        arr[min_index] = temp;
-    }
+     }
     cout << endl;
     for (int i = 0; i < size; i++)
     {
