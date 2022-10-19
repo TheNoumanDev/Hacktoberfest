@@ -7,23 +7,38 @@ class Car
 {
 private: // default
     string name, color;
-    int speed;
+    int speed,distance;
+    
 
 public:
-    // Parameterized constructors
-    Car(string name, string color, int speed) : name(name), color(color), speed(speed) {}
-
-    int get_travel_time(int distance)
+    //default constructor
+    Car()
     {
-        return distance / speed;
+    name=" ";
+    color=" ";
+    speed=0;
+    distance=0;
     }
+    // Parameterized constructors
+    Car(string name, string color, int speed,int distance) : name(name), color(color), speed(speed),distance(distance) {}
+
+    Car(string name, string color, int speed) : name(name), color(color), speed(speed) {}
+    void setdistance(int d)
+    {
+    distance=d;
+    }
+    int get_travel_time() const;
 
     // function header
-    int get_speed();
+    int get_speed() const;
 
-} Audi("R8", "white", 3);
+} Audi("R8", "white", 3,34);
 
 // functions can be defined outside class, provided we have defined its function header in class
+int Car::get_travel_time() const;
+{
+        return distance / speed;
+}
 int Car ::get_speed()
 {
     return speed;
@@ -31,9 +46,13 @@ int Car ::get_speed()
 
 int main()
 {
+    int s;
+    cout<<"enter distance"<<endl;
+    cin>>s;
     Car Mustang("Mustang", "black", 5);
-    cout << Mustang.get_travel_time(5) << "\n";
-    cout << Audi.get_travel_time(6) << "\n";
+    Mustang.setdistance(s);
+    cout << Mustang.get_travel_time() << "\n";
+    cout << Audi.get_travel_time() << "\n";
     cout << "Mustang speed : " << Mustang.get_speed() << "\n";
 
     return 0;
