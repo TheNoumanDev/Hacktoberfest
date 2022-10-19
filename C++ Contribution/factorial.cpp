@@ -7,15 +7,19 @@ int main() {
 
     cout << "Enter a positive integer: ";
     cin >> n;
-
-    if (n < 0)
-        cout << "Error! Factorial of a negative number doesn't exist.";
-    else {
-        for(int i = 1; i <= n; ++i) {
+    while (n < 0)
+    { 
+      cout << "Error! Factorial of a negative number doesn't exist."<<endl;
+      cout<<"again enter the number: "<<endl;
+      cin>>n;
+    }   
+   
+    for(int i = 1; i <= n; ++i)
+        {
             factorial *= i;
         }
         cout << "Factorial of " << n << " = " << factorial;    
-    }
+   
 
     return 0;
 }
