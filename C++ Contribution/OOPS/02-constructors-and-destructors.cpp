@@ -16,6 +16,7 @@ public:
     // no return type
     // should be public
     // can be overloaded!
+    // can be default, parametrized and copy constructor(deep or shallow)
 
     // default constructor
     Student()
@@ -33,6 +34,11 @@ public:
 
     Student(string name) : name(name) {} // another way of initializing
 
+    // Copy constructor
+    Student(Student& n)
+    {
+        this->name=n;
+    }
     // DESTRUCTORS
     // called automatically when object goes out of scope or gets destroyed
     // tilde = '~'
