@@ -1,35 +1,31 @@
-#include<iostream>
+#include <iostream>
+#include <cstring>
 using namespace std;
+
 int main()
 {
-	//removing duplicate numbers
-	int size;
-	cin >> size;
-	int* array = new int[size];
-	for (int i = 0; i < size; i++)
-	{
-		cin >> array[i];
-	}
-	for (int i = 0; i < size; i++)
-	{
-		for (int j = i + 1; j < size; )
-		{
-			if (array[i] == array[j])
-			{
-				for (int k = j; k < size - 1; ++k)
-				{
-					array[k] = array[k + 1];
-				}
-				--size;
 
+	char str[50];
+
+
+	cout << "Enter string : ";
+	cin >> str;
+	int l = strlen(str);
+	for (int i = 0; i < l; i++)
+	{
+		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'
+			|| str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+		{
+			for (int j = i; j < l; j++)
+			{
+				str[j] = str[j + 1];
 			}
-			else 
-				j++;
+			i--;
+			l--;
 		}
 	}
-	cout << endl;
-	for (int i = 0; i < size; i++)
-		cout << array[i] << "   ";
-	delete[] array;
-	array = nullptr;
+
+	cout << "After removing Vowels: " << str;
+
+	return 0;
 }
