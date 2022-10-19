@@ -7,15 +7,18 @@ int main()
 
      cout << "Enter a positive number: ";
      cin >> num;
-
-     n = num;
-
-     do
+     if(num<=0)
      {
+          cout<<"enter a positive number"<<endl;
+          cin>>num;
+     }
+     n = num;
+     while (num != 0)
+    {
          digit = num % 10;
          rev = (rev * 10) + digit;
          num = num / 10;
-     } while (num != 0);
+    }
 
      cout << " The reverse of the number is: " << rev << endl;
 
