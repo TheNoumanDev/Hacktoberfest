@@ -9,15 +9,15 @@
 # Note
 ```py
 '''
-Always try to make more then 4 pull requests.
-Let's assume you have made only 4 pull request to different projects.
-but one project is excluded from hackoctoberfest event.
-Then your pull request will not be counted and you will just have 4 valid pull requests.
-If this happens then you will not get any swags or t-shirt.
+Always try to make more than 4 pull requests.
+Let's assume you have made only 4 pull requests to different projects.
+but one project is excluded from the hacktoberfest event.
+Then your pull request will not be counted and you will only have 4 valid pull requests.
+If this happens then you will not get any swags or the t-shirts
 '''
 ```
 
-### 🗣 Let's COntribute to Open Sourse 🔥.
+### 🗣 Let's COntribute to Opensource 🔥.
 📢 **This repository aims to help beginners 🤔 with their first successful Pull Request and Open Source Contribution.**
 
 <br>
@@ -31,7 +31,7 @@ If this happens then you will not get any swags or t-shirt.
  
 ## ❗ Contribution Rules :
 
-   * **You can add programs in any programming languages in the related Folder's, but your program must be different or unique.**
+   * **You can add programs in any programming language in the related Folder, but your program must be different or unique.**
    * **You can contribute a "Hello World" program as well but in its related folder as well.**
    * **The pull requests must contain commits made by yourself.**
    * **Repeated codes will not be merged.**
@@ -39,7 +39,7 @@ If this happens then you will not get any swags or t-shirt.
  <br>
  
 ## 🌎 Steps to contribute:
-1. (Optional) If git is not install in your Laptop/PC:
+1. (Optional) If git is not installed on your laptop/pc:
    1. Download Git from [here](https://git-scm.com/downloads) and then Install it.
    2. Run your Git Bash, then copy and write the following Commands to Configure your git with your Github Account. (Required)
      ```sh
