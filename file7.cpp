@@ -1,31 +1,22 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-int main()
-{
+int main() {
 
-	char str[50];
+    int n;
+    int nInReverse = 0;
+    int Rem;
 
+    cout << "Enter your number : ";
+    cin >> n;
 
-	cout << "Enter string : ";
-	cin >> str;
-	int l = strlen(str);
-	for (int i = 0; i < l; i++)
-	{
-		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'
-			|| str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
-		{
-			for (int j = i; j < l; j++)
-			{
-				str[j] = str[j + 1];
-			}
-			i--;
-			l--;
-		}
-	}
+    while (n != 0) {
+        Rem = n % 10;
+        nInReverse = (nInReverse * 10) + Rem;
+        n = n / 10;
+    }
 
-	cout << "After removing Vowels: " << str;
+    cout << "Reversed number : " << nInReverse;
 
-	return 0;
+    return 0;
 }
