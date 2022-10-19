@@ -16,7 +16,8 @@ public:
     // no return type
     // should be public
     // can be overloaded!
-
+    // can be default, parametrized or copy constructor(deep or shallow)
+    
     // default constructor
     Student()
     {
@@ -32,6 +33,13 @@ public:
     // or
 
     Student(string name) : name(name) {} // another way of initializing
+
+    
+	// Copy constructor
+	Student(Student& s)
+	{
+		this->name = s.name;
+	}
 
     // DESTRUCTORS
     // called automatically when object goes out of scope or gets destroyed
