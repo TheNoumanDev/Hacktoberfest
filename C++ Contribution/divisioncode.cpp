@@ -8,11 +8,7 @@ int main(){
 	cout<<"2nd Number";
 	cin>>b;
 	int c;
-	while(b!=0){
-		c=b;
-		b=a%b;
-		a=c;
-	}
-	cout<<a;
+	c=a/b;
+	cout<<c;
 	return 0;
 }
