@@ -1,38 +1,36 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 int main()
 {
-    int x = time(0);
-    srand(x);
-   const  int size = 10;
-    int arr[size];
-    cout << "The elemnets in the array are given as:" << endl;
+    int size,temp=0;
+    cout<<"enter size of array"<<endl;
+    cin>>size;
+    //dynamically allocating array
+    int *arr=new int[size];
+    cout << "Enter the elemetns of the array:" << endl;
     for (int i = 0; i < size; i++)
     {
-        // arr[i] = (rand() % 20) + 1;
-        cin>>arr[i];
+       cin>>arr[i];
     }
+    cout<"Entered array is: "<<endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
-    int innerSize=size;
     cout << "The sorted array in the asscending order is given as as:" << endl;
     for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < innerSize; j++)
+        for (int j = 0; j < size-1; j++)
         {
-            int temp = arr[j + 1];
             if (arr[j] > arr[j + 1])
             {
-                arr[j + 1] = arr[j];
-                arr[j] = temp;
+                temp=arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
         }
-        innerSize--;
+        
     }
     for (int i = 0; i < size; i++)
     {
