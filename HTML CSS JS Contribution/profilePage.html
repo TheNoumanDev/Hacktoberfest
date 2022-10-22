@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="editSpProfile.css"> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="path/to/font-awesome/css/font-awesome.min.css">
+        <style>
+            .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profileImageColumns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilePicture {
+    object-fit: contain;
+    height: 20vh;
+}
+
+.profilePictureDiv {
+    height: 20vh;
+    width: 20vh;
+    border: 1px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.editProfileButton {
+    width: 10em;
+    height: 5em;
+}
+
+.infoBox {
+    background-color: whitesmoke;
+    height: 7em;
+}
+
+.reviewerImageDiv {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviewerImage {
+    object-fit: fill;
+    height: 4em;
+}
+
+.review {
+    background-color: whitesmoke;
+}
+
+.reviewsContainer,
+.portfolioContainer {
+    box-shadow: 5px 5px 5px 5px grey;
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+.portfolioPicture {
+    object-fit: contain;
+    height: 15em;
+    padding: 20px;
+    box-shadow: 0px 4px 2px 5px whitesmoke;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row profileImageRow mb-5">
+                <div class="col-xs-12 profileImageColumns">
+                    <div class="profilePictureDiv centerColumn">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTf9d3vymakpWH5l6ZT7FHXPWmVATlApygyg&usqp=CAU"
+                            alt="profilePicture" class="profilePicture">
+                    </div>
+                    <h5 class="profileName">Abdul Ahad</h5>
+                    <div class="starsContainer">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row profilInfoRow mb-5">
+                <div class="col-md-4 mb-3 centerColumn">
+                    <i class="fa fa-list-ul fa-2x mb-3"></i>
+                    <h4>Carpenter</h4>
+                </div>
+                <div class="col-md-4 mb-3 centerColumn">
+                    <button type="button" class="btn btn-success btn-lg
+                        editProfileButton">Success</button>
+                </div>
+                <div class="col-md-4 centerColumn">
+                    <i class="fa fa-map-marker fa-2x mb-3"></i>
+                    <h5>Baghbanpura, Lahore</h5>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="infoBox centerColumn">
+                        <h4>Total Earnings</h4>
+                        <h5>Rs. 12,000</h5>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="infoBox centerColumn">
+                        <h4>Experience</h4>
+                        <h5>5 Years</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="infoBox centerColumn">
+                        <h4>Jobs Completed</h4>
+                        <h5>10</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4>Portfolio</h4>
+                <div class="container portfolioContainer p-5 mb-5">
+                    <div class="row m-4">
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= '
+                                portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= 'portfolioPicture'>
+                        </div>
+                        <div class="col-md-3 mb-5 centerColumn">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MP7h1EikaSEioEPq-qVKTF_0xEAFcXEI-w&usqp=CAU"
+                                alt="portfolioPic" class= '
+                                portfolioPicture'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Reviews</h4>
+                <div class="container reviewsContainer p-5 mb-5">
+                    <div class="row mb-5 review p-4">
+                        <div class="col-md-1">
+                            <div class="reviewerImageDiv centerColumn">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTf9d3vymakpWH5l6ZT7FHXPWmVATlApygyg&usqp=CAU"
+                                    alt="profilePicture" class="reviewerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-12 reviewerName">
+                                    <h5>Muhammad Huzaifa Khan</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 reviewMessage">
+                                    <p>It is a long established fact that a
+                                        reader
+                                        will be distracted by the readable
+                                        content
+                                        of a page when looking at its layout.
+                                        The
+                                        point of using Lorem Ipsum is that it
+                                        has a
+                                        more-or-less normal distribution of
+                                        letters,
+                                        as opposed to using 'Content here,
+                                        content
+                                        here', making it look like readable
+                                        English.
+                                        Many desktop publishing packages and web
+                                        page editors now use Lorem Ipsum as
+                                        their
+                                        default model text, and a search for
+                                        'lorem
+                                        ipsum' will uncover many web sites still
+                                        in
+                                        their infancy. </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 reviewRating center
+                                    justify-content-start">
+                                    <p class="m-0">Ratings</p>
+                                    <div class="starsContainer mx-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 reviewTime
+                                    justify-content-start">
+                                    <p class="m-0">10 hrs Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 review p-4">
+                        <div class="col-md-1">
+                            <div class="reviewerImageDiv centerColumn">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTf9d3vymakpWH5l6ZT7FHXPWmVATlApygyg&usqp=CAU"
+                                    alt="profilePicture" class="reviewerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-12 reviewerName">
+                                    <h5>Muhammad Huzaifa Khan</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 reviewMessage">
+                                    <p>It is a long established fact that a
+                                        reader
+                                        will be distracted by the readable
+                                        content
+                                        of a page when looking at its layout.
+                                        The
+                                        point of using Lorem Ipsum is that it
+                                        has a
+                                        more-or-less normal distribution of
+                                        letters,
+                                        as opposed to using 'Content here,
+                                        content
+                                        here', making it look like readable
+                                        English.
+                                        Many desktop publishing packages and web
+                                        page editors now use Lorem Ipsum as
+                                        their
+                                        default model text, and a search for
+                                        'lorem
+                                        ipsum' will uncover many web sites still
+                                        in
+                                        their infancy. </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3 reviewRating center
+                                    justify-content-start">
+                                    <p class="m-0">Ratings</p>
+                                    <div class="starsContainer mx-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 reviewTime
+                                    justify-content-start">
+                                    <p class="m-0">10 hrs Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 review p-4">
+                        <div class="col-md-1">
+                            <div class="reviewerImageDiv centerColumn">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTf9d3vymakpWH5l6ZT7FHXPWmVATlApygyg&usqp=CAU"
+                                    alt="profilePicture" class="reviewerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-12 reviewerName">
+                                    <h5>Muhammad Huzaifa Khan</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 reviewMessage">
+                                    <p>It is a long established fact that a
+                                        reader
+                                        will be distracted by the readable
+                                        content
+                                        of a page when looking at its layout.
+                                        The
+                                        point of using Lorem Ipsum is that it
+                                        has a
+                                        more-or-less normal distribution of
+                                        letters,
+                                        as opposed to using 'Content here,
+                                        content
+                                        here', making it look like readable
+                                        English.
+                                        Many desktop publishing packages and web
+                                        page editors now use Lorem Ipsum as
+                                        their
+                                        default model text, and a search for
+                                        'lorem
+                                        ipsum' will uncover many web sites still
+                                        in
+                                        their infancy. </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3 reviewRating center
+                                    justify-content-start">
+                                    <p class="m-0">Ratings</p>
+                                    <div class="starsContainer mx-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 reviewTime
+                                    justify-content-start">
+                                    <p class="m-0">10 hrs Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 review p-4">
+                        <div class="col-md-1">
+                            <div class="reviewerImageDiv centerColumn">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTf9d3vymakpWH5l6ZT7FHXPWmVATlApygyg&usqp=CAU"
+                                    alt="profilePicture" class="reviewerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-12 reviewerName">
+                                    <h5>Muhammad Huzaifa Khan</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 reviewMessage">
+                                    <p>It is a long established fact that a
+                                        reader
+                                        will be distracted by the readable
+                                        content
+                                        of a page when looking at its layout.
+                                        The
+                                        point of using Lorem Ipsum is that it
+                                        has a
+                                        more-or-less normal distribution of
+                                        letters,
+                                        as opposed to using 'Content here,
+                                        content
+                                        here', making it look like readable
+                                        English.
+                                        Many desktop publishing packages and web
+                                        page editors now use Lorem Ipsum as
+                                        their
+                                        default model text, and a search for
+                                        'lorem
+                                        ipsum' will uncover many web sites still
+                                        in
+                                        their infancy. </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3 reviewRating center
+                                    justify-content-start">
+                                    <p class="m-0">Ratings</p>
+                                    <div class="starsContainer mx-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 reviewTime
+                                    justify-content-start">
+                                    <p class="m-0">10 hrs Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
