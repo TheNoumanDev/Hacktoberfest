@@ -1,0 +1,37 @@
+#row1
+{
+    text-align: center;
+    background-color: brown;
+    color: chartreuse;
+    
+}
+body{
+    background-color:goldenrod;
+    
+}
+#item-container-1 , #item-container-3
+{
+    height: 500px;
+    background-color:white;
+    width: 100%;
+
+    margin-top: 10px;
+    border: solid black;
+}
+
+#row2
+{
+
+}
+.mybutton{
+    
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+}
+
