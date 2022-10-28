@@ -1,0 +1,9 @@
+// this is a comment, any lines that start with //
+// (and blank lines) should be ignored
+
+// New customer data
+// data is customerID, surname, firstName, otherInitials, title
+unknown, Newton, David, E, Dr
+unknown, Gregson, Brian, R T, Mr
+unknown, Evans, David, , Dr
+unknown, Smith, Sara, C, Ms
