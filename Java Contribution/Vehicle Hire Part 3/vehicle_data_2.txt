@@ -1,0 +1,33 @@
+// this is a comment, any lines that start with //
+// (and blank lines) should be ignored
+
+[Car data]
+// data is Group, VehID, RegNo, Make, Model, AirCon or Climate Control, Engine Size (litres), Fuel type, Gearbox, Transmission, Mileage, Date first registered, Body type, Number of doors, Number of seats
+AA, TF-63403, MJ09TFE, Fiat, Panda Active Eco, No, 1.1, Unleaded, five-speed manual, FWD, 13584, 29-07-2009, Hatchback, 5, 5
+A, TF-61273, MJ09TFD, Fiat, Grande Punto Active, No, 1.4, Unleaded, five-speed manual, FWD, 14278, 12-05-2009, Hatchback, 3, 5
+A, TF-64810, NR59GHD, Ford, Ka Style, No, 1.2, Unleaded, five-speed manual, FWD, 12892, 01-10-2009, Hatchback, 3, 4
+B, TF-68670, MA59DCS, Vauxhall, Corsa Exclusiv, Yes, 1.4, Unleaded, four-speed auto, FWD, 1734, 12-12-2009, Hatchback, 5, 5
+B, TF-61854, MJ09TFG, Fiat, Grande Punto Eleganza, Yes, 1.4, Unleaded, five-speed manual, FWD, 22451, 12-05-2009, Hatchback, 5, 5
+B, TF-69215, PT09TAW, Peugeot, 207 Urban, Yes, 1.4, Diesel, five-speed manual, FWD, 2645, 23-11-2009, Hatchback, 5, 5
+C, TF-67358, NR59GHM, Ford, Mondeo TDCi Zetec, Yes, 2.0, Diesel, six-speed manual, FWD, 803, 21-02-2010, Saloon, 4, 5
+C, TF-65118, NR59GHN, Ford, Mondeo TDCi Zetec, Yes, 2.0, Diesel, six-speed manual, FWD, 1103, 21-02-2010, Saloon, 4, 5
+
+[van data]
+// data is Group, VehID, RegNo, Make, Model, AirCon or Climate Control, Engine Size (litres), Fuel type, Gearbox, Transmission, Mileage, Date first registered, Payload (kg), Load Compartment Volume (m3), Sliding Side Door
+C1, GH-68135, TG59DCF, Volkswagen, Caddy 140PS,  No, 2.0, Diesel, five-speed manual, FWD,  2795, 23-11-2009, 724, 3.2, Yes
+C1, GH-69474, PX58HJE, Ford, Connect 1.8 TD Ci 110 PS (T200), No, 1.8, Diesel, five-speed manual, FWD, 23897, 12-01-2009, 648, 3.4, Yes
+C1, GH-68002, DC09RTY , Renault, Kangoo ML 19P 90, Yes, 1.5, Petrol, five-speed manual, FWD, 9458, 12-08-2009, 650, 3.0, Yes
+C2, GH-60634, PY09GHC, Ford, Transit TD Ci 140 PS, No, 2.4, Diesel, five-speed manual, RWD, 11853 , 05-07-2009, 1342, 6.1, Yes
+C2, GH-67163, PY09GHD, Ford, Transit TD Ci 140 PS, No, 2.4, Diesel, five-speed manual, RWD, 14577, 05-07-2009, 1342, 6.1, Yes
+C2, GH-64019, PY09GHE, Ford, Transit TD Ci 140 PS, No, 2.4, Diesel, five-speed manual, RWD, 8945, 25-08-2009, 1342, 6.1, Yes
+
+[Truck data]
+// data is Group, VehID, RegNo, Make, Model, AirCon or Climate Control, Engine Size (litres), Fuel type, Gearbox, Transmission, Mileage, Date first registered, Payload (kg), Features
+T2, JK-69991, GH08YDC, Ford, Transit TD Ci 100 PS , No, 2.4, Diesel, five-speed manual, RWD,  22673, 03-03-2008, 1100, Tipper, dual rear wheels
+T2, JK-68002, GH08YDD, Ford, Transit TD Ci 100 PS , No, 2.4, Diesel, five-speed manual, RWD, 20561, 03-03-2008, 1100, Tipper, dual rear wheels
+T4, JK-64294, GH08YFT, Ford, Transit TD Ci 100 PS , No, 2.4, Diesel, five-speed manual, RWD, 25334, 17-03-2008, 1100, Double cab, Tipper, dual rear wheels
+T1, JK-67056, LG59BNR, Ford, Transit TDCi 100PS, No, 2.4, Diesel, five-speed manual, RWD, 8965, 16-10-2009 , 1110, dropside (removable side and tailboards)
+T3, JK-64314, KL09KLW, Renault, Trafic LH29dCi 150, Yes, 2.5, Diesel, six-speed manual, FWD, 14561, 22-06-2009, 1205, Tail-lift, sliding side door
+T5, JK-69690, KL09KGF, Renault, Mascott  130.35, Yes, 3.0, Diesel, six-speed manual, RWD, 12378, 12-07-2009, 2700, Refrigerate, tail-lift
+T5, JK-60163, KL09KGG, Renault, Mascott  130.35, Yes, 3.0, Diesel, six-speed manual, RWD, 13244, 12-07-2009, 2700, Refrigerate, tail-lift
+
